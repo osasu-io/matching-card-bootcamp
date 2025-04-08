@@ -9,7 +9,7 @@ fetch('/api/cards')
   })
   .then(function (cardArray) {
     cardsFromServer = cardArray;
-
+\
     const board = document.getElementById('gameBoard');
 
     for (let i = 0; i < cardArray.length; i++) {
