@@ -1,0 +1,44 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  margin-top: 30px;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(5, 100px);
+  grid-gap: 10px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  background-color: #333;
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  border: 2px solid #000; /* 🟩 Add border */
+  transition: background-color 0.3s ease;
+}
+
+.card.flipped {
+  background-color: #fff;
+  color: #000;
+}
+
+.card.matched {
+  background-color: lightgreen !important; /* ✅ Stay light green */
+  color: #000;
+  cursor: default;
+}
+
